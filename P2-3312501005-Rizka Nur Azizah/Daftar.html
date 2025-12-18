@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Form Biodata</title>
+</head>
+<body>
+<table border="0" width="100%">
+    <img align="left" width="130" height="130" src="logokampus.png"></img>
+            <center>
+                <h2>POLITEKNIK NEGERI BATAM</h2>
+                <h3>TEKNIK INFORMATIKA</h3>
+                <h3>JL. AHMAD YANI, TLK. KERING, KEC. BATAM KOTA, KOTA BATAM, KEPULAUAN RIAU, 29461</h3>
+</table> 
+        
+<hr size="5" color="blue">   
+</center>
+
+<h3 align="center"><font color="#8B51ED">Form Biodata</font></h3>
+
+<form>
+    <table align="center" cellpadding="2" cellspacing="0">
+        <tr>
+            <td width="140">Nama</td>
+            <td width="15">:</td>
+            <td><input type="text" name="nama"></td>
+        </tr>
+        <tr>
+            <td>Tgl Lahir</td>
+            <td>:</td>
+            <td>
+                <input type="text" name="tgl" size="2"> /
+                <input type="text" name="bln" size="2"> /
+                <input type="text" name="thn" size="4">
+            </td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td>:</td>
+            <td><textarea name="alamat" rows="2" cols="25"></textarea></td>
+        </tr>
+        <tr>
+            <td>Kota</td>
+            <td>:</td>
+            <td><input type="text" name="kota"></td>
+        </tr>
+        <tr>
+            <td>Pekerjaan</td>
+            <td>:</td>
+            <td>
+                <select name="pekerjaan">
+                    <option>Tani</option>
+                    <option>Pelajar</option>
+                    <option>Mahasiswa</option>
+                    <option>PNS</option>
+                    <option>Karyawan</option>
+                    <option>Lainnya</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td>
+                <input type="radio" name="jk" value="Laki-Laki"> Laki-Laki
+                <input type="radio" name="jk" value="Perempuan"> Perempuan
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">Hobby</td>
+            <td valign="top">:</td>
+            <td valign="top">
+                <input type="checkbox" name="hobi" value="Reading"> Reading<br>
+                <input type="checkbox" name="hobi" value="Sport"> Sport<br>
+                <input type="checkbox" name="hobi" value="Singing"> Singing<br>
+                <input type="checkbox" name="hobi" value="Travelling"> Travelling
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <input name="btnkirim" type="submit" id="btnkirim" value="kirim">
+                <input name="btncancel" type="reset" id="btncancel" value="cancel">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
