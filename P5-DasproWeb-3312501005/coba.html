@@ -1,0 +1,141 @@
+Mengakses Elemen DOM
+• getElementById() : Mengakses elemen berdasarkan ID, metode ini sangat umum karena ID bersifat unik di setiap halaman.
+• getElementsByClassName() : Mengembalikan semua elemen yang memiliki class tertentu sebagai koleksi (HTMLCollection).
+• getElementsByTagName() : Mengambil semua elemen dengan tag tertentu (misalnya, semua <p> atau <div>) sebagai HTMLCollection.
+• querySelector() : Mengembalikan elemen pertama yang cocok dengan selektor CSS yang diberikan.
+• querySelectorAll() : Mengembalikan semua elemen yang cocok dengan selektor CSS sebagai NodeList.
+
+Mengubah atau Memanipulasi Konten Elemen
+• innerHTML : Mengambil atau mengubah konten HTML dari sebuah elemen.
+• textContent : Mengambil atau mengubah teks dari elemen, termasuk teks yang tersembunyi, tetapi tanpa HTML.
+
+Memanipulasi Atribut Elemen
+• setAttribute() : Menambahkan atau memperbarui atribut elemen.
+• getAttribute() : Mengambil nilai dari atribut yang ditentukan pada elemen.
+• removeAttribute() : Menghapus atribut dari elemen.
+
+Mengubah Gaya Elemen
+• Style : Mengubah gaya CSS langsung pada elemen.
+
+Mengelola Elemen DOM (Menambah, Menghapus, dan Mengganti Elemen)
+• createElement() : Membuat elemen HTML baru.
+• appendChild() : Menambahkan elemen baru ke dalam elemen lain sebagai anak terakhir.
+• removeChild() : Menghapus elemen anak dari elemen induk.
+• replaceChild() : Mengganti elemen anak dengan elemen baru.
+
+Event Listener
+• addEventListener() : Metode ini menambahkan event listener pada elemen, yang akan mengeksekusi fungsi callback ketika event tertentu terjadi.
+• removeEventListener() : Metode ini menghapus event listener dari elemen. Event listener harus ditambahkan dengan cara yang sama (fungsi dan
+parameter) agar bisa dihapus.
+
+Event Types
+Berikut adalah beberapa tipe peristiwa umum
+yang bisa ditangani di JavaScript:
+• click: Terjadi ketika elemen diklik.
+• dblclick: Terjadi ketika elemen diklik dua kali.
+• mousedown: Terjadi ketika tombol mouse ditekan.
+• mouseup: Terjadi ketika tombol mouse dilepas.
+• mouseover: Terjadi ketika mouse bergerak di atas elemen.
+• mouseout: Terjadi ketika mouse bergerak keluar
+dari elemen.
+
+Form Events
+• submit: Terjadi ketika formulir disubmit.
+• change: Terjadi ketika nilai elemen form berubah.
+• focus: Terjadi ketika elemen form mendapat fokus.
+• blur: Terjadi ketika elemen form kehilangan fokus.
+
+JENIS-JENIS JENDELA DIALOG Alert 
+• Jendela alert digunakan untuk menampilkan pesan sederhana kepada pengguna.
+• Memberikan informasi tanpa interaksi lebih lanjut selain menutup kotak dialog tersebut.
+• Pengguna hanya bisa menutup kotak dialog dengan mengklik tombol "OK".
+
+<button onclick="showAlert()">Tampilkan Alert</button>
+<script>
+function showAlert(){
+    alert("Ini adalah pesan alert!");
+}
+</script>
+
+Prompt (Input dari Pengguna)
+• Jendela prompt digunakan untuk meminta input dari pengguna.
+• Pengguna dapat mengetikkan sesuatu ke dalam kotak teks, dan hasil input
+tersebut dapat digunakan dalam kode JavaScript.
+<button onclick="askName()">Tanyakan Nama</button>
+<script>
+    function askName () {
+        var name = prompt("Masukkan nama anda:", "nama");
+    if (name != null && name != "") {
+        alert("Halo, " + name + "! Selamat datang.");
+        }
+    }
+</script>
+
+Confirm
+• Jendela confirm digunakan untuk meminta konfirmasi dari pengguna.
+• Kotak dialog ini menampilkan pesan dengan dua tombol: OK dan Cancel.
+• Hasil dari kotak dialog ini adalah boolean (true jika pengguna mengklik "OK", dan false jika mereka mengklik "Cancel").
+
+<button onclick="confirmAction()">Konfirmasi Aksi</button>
+<script>
+    function confirmAction () {
+        var result = confirm("Apakah Anda yakin ingin melanjutkan?");
+        if (result) {
+            alert("Anda memilih OK!");
+        } else {
+            alert("Anda memilih Cancel!");
+        }
+    }
+</script>
+
+Mengubah Gaya Elemen
+• Style : Mengubah gaya CSS langsung pada elemen.
+Mengelola Elemen DOM (Menambah, Menghapus, dan Mengganti Elemen)
+• createElement() : Membuat elemen HTML baru.
+• appendChild() : Menambahkan elemen baru ke dalam elemen lain
+sebagai anak terakhir.
+• removeChild() : Menghapus elemen anak dari elemen induk.
+• replaceChild() : Mengganti elemen anak dengan elemen baru.
+
+Event Listener
+• addEventListener() : Metode ini menambahkan event listener pada elemen,
+yang akan mengeksekusi fungsi callback ketika event tertentu terjadi.
+• removeEventListener() : Metode ini menghapus event listener dari elemen.
+Event listener harus ditambahkan dengan cara yang sama (fungsi dan
+parameter) agar bisa dihapus.
+
+function handleClick () {
+alert("Button clicked!");
+}
+button.addEventListener("click", handleClick);
+button.removeEventListener("click", handleClick);
+
+
+Berikut adalah beberapa tipe peristiwa umum
+yang bisa ditangani di JavaScript:
+• click: Terjadi ketika elemen diklik.
+• dblclick: Terjadi ketika elemen diklik dua kali.
+• mousedown: Terjadi ketika tombol mouse ditekan.
+• mouseup: Terjadi ketika tombol mouse dilepas.
+• mouseover: Terjadi ketika mouse bergerak di atas
+elemen.
+• mouseout: Terjadi ketika mouse bergerak keluar
+dari elemen
+
+let box = document.getElementById("box");
+box. addEventListener("mouseover", function () {
+box.style.backgroundColor = "lightblue";
+});
+box. addEventListener("mouseout", function () {
+box.style.backgroundColor = "";
+});
+
+
+Form Events
+• submit: Terjadi ketika formulir disubmit.
+• change: Terjadi ketika nilai elemen form 
+berubah.
+• focus: Terjadi ketika elemen form mendapat
+fokus.
+• blur: Terjadi ketika elemen form kehilangan
+fokus.
