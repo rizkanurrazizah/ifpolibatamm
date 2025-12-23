@@ -1,0 +1,15 @@
+<table border='1'><thead>
+        <tr>
+            <th>NIS</th>
+            <th>Nama</th>
+            <th>Jenis Kelamin</th>
+            <th>Telepon</th>
+            <th>Alamat</th>
+        </tr>
+    </thead><tr>
+            <td>3312501005</td>
+            <td>RIZKA NUR AZIZAH </td>
+            <td>Perempuan</td>
+            <td>0812 7690 3211</td>
+            <td>Perum Taman Teratai</td>
+        </tr></table>
